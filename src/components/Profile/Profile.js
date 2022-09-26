@@ -5,7 +5,7 @@ import { user } from 'components/user.json'
 
 
 export const Profile = ({username, tag, location, avatar, stats}) => {
-    //const {username, tag, location, avatar, stats} = profile;
+   
     return (
      <Card>
   <div className="description">
