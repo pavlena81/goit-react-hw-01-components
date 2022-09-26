@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Card } from './Profile.styled';
 
-import { user } from 'components/user.json'
+
 
 
 export const Profile = ({username, tag, location, avatar, stats}) => {
