@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Card } from './Profile.styled';
+import { Card, Descript, AvatarImg, ListStats} from './Profile.styled';
 
 
 
@@ -7,9 +7,9 @@ import { Card } from './Profile.styled';
 export const Profile = ({username, tag, location, avatar, stats}) => {
    
     return (
-     <Card>
-  <div className="description">
-    <img
+<Card>
+  <Descript>
+    <AvatarImg
       src={avatar}
       alt="User avatar"
       className="avatar"
@@ -17,9 +17,9 @@ export const Profile = ({username, tag, location, avatar, stats}) => {
     <p className="name">{username}</p>
     <p className="tag">{tag}</p>
     <p className="location">{location}</p>
-  </div>
+  </Descript>
 
-  <ul className="stats">
+  <ListStats>
     <li>
       <span className="label">Followers</span>
       <span className="quantity">{stats.followers}</span>
@@ -32,7 +32,7 @@ export const Profile = ({username, tag, location, avatar, stats}) => {
       <span className="label">Likes</span>
       <span className="quantity">{stats.likes}</span>
     </li>
-  </ul>
+  </ListStats>
 </Card>
     )
 }
