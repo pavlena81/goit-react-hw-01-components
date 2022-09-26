@@ -1,6 +1,9 @@
 import user from 'components/user.json';
+import data from 'components/data.json';
 
 import { Profile } from "./Profile/Profile";
+import { Statistics } from './Statistics/StatisticsList';
+
 
 
 
@@ -13,8 +16,10 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-/>
-      React homework template
+      />
+      <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
     </div>
+
   );
 };
