@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+function changeStatus({ isOnline }) {
+return isOnline ? 'rgb(255, 0, 0)' : 'rgb(0, 255, 0)'
+ }
+
 export const ListFriends = styled.ul`
 display: flex;
 flex-direction: column;
@@ -14,6 +18,7 @@ export const ItemFriends = styled.li`
  display: flex;
  width: 440px; 
  margin:0 auto;
+ padding:10px;
 
  margin-bottom: 20px;
 
@@ -26,20 +31,22 @@ export const ItemFriends = styled.li`
 `
 
 export const Status = styled.span`
-padding:5px;
+
+  &:before {
+    content: ".";
+    color:transparent;
+    width:8px;
+    height:8px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;     
+    
+    margin: 10px;
+    padding: 0px 6px;      
+    background: ${changeStatus};      
+}   
 `
 
 export const ImgFriends = styled.img`
-margin-right:10px;
-
-  ::before {
-    content:" ";
-    width:10px;
-    height: 10px;
-    
-    border-radius:50%;
-    background-color: #FF0000;
-    margin-right: 10px;
-    box-sizing: border-box;
-}
+margin-right:10px;  
 `
