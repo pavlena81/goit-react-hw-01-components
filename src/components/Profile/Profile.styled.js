@@ -35,9 +35,25 @@ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
 
 
 `
-export const ListStats = styled.ul`
-display: inline-flex;
 
-gap: 20px;
+export const UserDescription = styled.p`
+
+text-align:center;
+font-weight: bold;
+`
+export const UserLabel = styled.p`
+text-align:center;
+
+`
+
+export const ListStats = styled.ul`
+display: flex;
+
+gap: 80px;
 list-style: none;
+`
+export const ItemStats = styled.li`
+display: flex;
+flex-direction:column;
+ 
 `
