@@ -11,8 +11,8 @@ export const Transaction = ({type, amount, currency }) => {
     );
 };
 
-Transaction.PropTypes = {
-    type: PropTypes.oneOfType([]).isRequired,
+Transaction.propTypes = {
+    type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
-    currency: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired,
 }
