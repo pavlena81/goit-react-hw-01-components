@@ -4,7 +4,7 @@ import friends from 'components/Friends/friends.json';
 
 import { Profile } from "./Profile/Profile";
 import { Statistics } from './Statistics/StatisticsList';
-import { Friends } from './Friends/FriendsList';
+import { FriendList } from './Friends/FriendsList';
 
 
 
