@@ -12,6 +12,8 @@ align-items:center;
 margin: 0 auto;
 
 list-style: none;
+ margin-bottom:50px;
+
 `
 
 export const ItemFriends = styled.li`

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import { Transaction } from './transaction';
-import { Table, THead, TBorder } from './transactionsHistory.styled';
+import { Table, THead, TBorder, TH, TBody } from './transactionsHistory.styled';
 
 
 export const TransactionHistory = ({ items }) => {
@@ -9,13 +9,13 @@ export const TransactionHistory = ({ items }) => {
         <Table>
             <THead>
                 <TBorder>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
+                    <TH>Type</TH>
+                    <TH>Amount</TH>
+                    <TH>Currency</TH>
                 </TBorder>
             </THead>
 
-            <tbody>
+            <TBody>
                 
                 {items.map(({ id, type, amount, currency }) => {
                     return(
@@ -27,7 +27,7 @@ export const TransactionHistory = ({ items }) => {
                     />)
                 })}
                    
-            </tbody>
+            </TBody>
         </Table>
     )
 };
