@@ -39,12 +39,11 @@ export const Status = styled.span`
     color:transparent;
     width:8px;
     height:8px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;     
+
+    border-radius: 50px;
     
     margin: 10px;
-    padding: 0px 6px;      
+    padding: 0px 6px;
     background: ${changeStatus};      
 }   
 `
