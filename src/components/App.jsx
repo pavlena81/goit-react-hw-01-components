@@ -1,5 +1,5 @@
-import user from 'components/user.json';
-import data from 'components/data.json';
+import user from 'components/Profile/user.json';
+import data from 'components/Statistics/data.json';
 import friends from 'components/Friends/friends.json';
 import transactions from 'components/Transactions/transactions.json';
 
