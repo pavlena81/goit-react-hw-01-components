@@ -32,20 +32,15 @@ export const ItemFriends = styled.li`
              rgba(0, 0, 0, 0.23) 0px 6px 6px;
 `
 
-export const Status = styled.span`
-
-  &:before {
-    content: ".";
-    color:transparent;
-    width:8px;
-    height:8px;
-
+export const Status = styled.span`  
+    width:15px;
+    height:15px;
     border-radius: 50px;
     
     margin: 10px;
-    padding: 0px 6px;
+  
     background: ${changeStatus};      
-}   
+ 
 `
 
 export const ImgFriends = styled.img`

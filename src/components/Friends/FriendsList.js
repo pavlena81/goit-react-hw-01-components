@@ -9,7 +9,7 @@ export const FriendList = ({friends}) => {
             {friends.map(({avatar, name, isOnline, id }) =>(
     
         <ItemFriends key={id}>
-            <Status>{isOnline}</Status>
+            <Status  isOnline={isOnline}></Status>
             <ImgFriends src={avatar} alt="User avatar" width="48" />
             <p className="name">{name}</p>
         </ItemFriends>  
@@ -19,9 +19,6 @@ export const FriendList = ({friends}) => {
         
     )
 }
-
-
-
 
 FriendList.propTypes = {
     friendr: PropTypes.arrayOf(
